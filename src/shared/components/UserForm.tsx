@@ -52,9 +52,9 @@ export const UserForm = ({ data = defaultValues, mode }: UserFormProps) => {
 			</IconButton>
 			</div>
 			<form onSubmit={handleSubmit((data) => mutation.mutate(data))} className="flex flex-col gap-6 w-80">
-				<TextField label="First Name" {...register("firstName")} />
-				<TextField label="Last Name" {...register("lastName")} />
-				<TextField label="Email" {...register("email")} type="email" />
+				<TextField label="First Name" {...register("firstName")} required/>
+				<TextField label="Last Name" {...register("lastName")} required/>
+				<TextField label="Email" {...register("email")} type="email" required/>
 				<Controller
 					name="skills"
 					control={control}
