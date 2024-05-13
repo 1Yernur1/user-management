@@ -1,0 +1,17 @@
+services:
+  server:
+    build:
+      context: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/app
+      - /app/node_modules
+  json-server:
+      build: .
+      ports:
+          - 3000:3000
+      command: npm run server
+
