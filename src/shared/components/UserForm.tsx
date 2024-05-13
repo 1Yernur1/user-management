@@ -41,7 +41,7 @@ export const UserForm = ({ data = defaultValues, mode }: UserFormProps) => {
 	const mutation = useMutation({
 		mutationKey: ["user", userId],
 		mutationFn: (data: UserModel) => (mode === "create" ? createUser(data) : updateUser(data, userId!)),
-		onSuccess: () => navigate("/"),
+		onSuccess: () => navigate(-1),
 	});
 
 	return (
