@@ -1,6 +1,42 @@
 {
   "users": [
     {
+      "id": "1",
+      "skills": [
+        "Java",
+        "Spring",
+        "Hibernate"
+      ],
+      "registrationDate": "2024-05-11",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@example.com"
+    },
+    {
+      "id": "2",
+      "skills": [
+        "C++",
+        "Qt",
+        "OpenGL"
+      ],
+      "registrationDate": "2024-05-09",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jane@example.com"
+    },
+    {
+      "id": "3",
+      "skills": [
+        "Python",
+        "Flask",
+        "SQLAlchemy"
+      ],
+      "registrationDate": "2024-05-08",
+      "firstName": "Charlie",
+      "lastName": "Brown",
+      "email": "charlie@example.com"
+    },
+    {
       "id": "4",
       "skills": [
         "Ruby",
@@ -73,18 +109,6 @@
       "registrationDate": "2024-05-11"
     },
     {
-      "id": "cac1",
-      "skills": [
-        "JavaScript",
-        "TypeScript",
-        "Angular"
-      ],
-      "registrationDate": "2024-05-11T14:42:10.206Z",
-      "firstName": "Yernur",
-      "lastName": "Bread",
-      "email": "shalgymbayev.yernur2001@gmail.com"
-    },
-    {
       "id": "b5a6",
       "firstName": "Example",
       "lastName": "ExampleLastName",
@@ -94,18 +118,29 @@
         "MySQL",
         "CSS"
       ],
-      "registrationDate": "2024-05-13T08:44:25.602Z"
+      "registrationDate": "2024-05-13"
     },
     {
-      "id": "568a",
-      "firstName": "zxczscsa",
-      "lastName": "sdasdzcx",
-      "email": "asdcxzc@asdasd.casd",
+      "id": "8a7a",
+      "firstName": "Alice",
+      "lastName": "Smith",
+      "email": "alice@example.com",
       "skills": [
-        "SQL",
-        "HTML"
+        "Django",
+        "Python"
       ],
-      "registrationDate": "2024-05-13T09:29:13.688Z"
+      "registrationDate": "2024-05-13"
+    },
+    {
+      "id": "c452",
+      "firstName": "NEwNeame",
+      "lastName": "NewSurname",
+      "email": "NewExmapl@emxaple.com",
+      "skills": [
+        "Django",
+        "CSS"
+      ],
+      "registrationDate": "2024-05-13"
     }
   ],
   "skills": [

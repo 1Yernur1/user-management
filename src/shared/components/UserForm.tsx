@@ -6,13 +6,14 @@ import { createUser, updateUser } from "../../service";
 import { Button, Chip, IconButton, Stack, TextField } from "@mui/material";
 import { UserModel } from "../../model";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const defaultValues = {
 	firstName: "",
 	lastName: "",
 	email: "",
 	skills: [],
-	registrationDate: new Date(),
+	registrationDate: new Date().toISOString().split('T')[0],
 };
 
 interface UserFormProps {
@@ -44,7 +45,12 @@ export const UserForm = ({ data = defaultValues, mode }: UserFormProps) => {
 	});
 
 	return (
-		<div className="min-h-screen grid place-items-center">
+		<div className="min-h-screen grid place-items-center relative">
+			<div className="absolute top-4 left-4">
+			<IconButton onClick={() => navigate(-1)}>
+				<ArrowBackIcon />
+			</IconButton>
+			</div>
 			<form onSubmit={handleSubmit((data) => mutation.mutate(data))} className="flex flex-col gap-6 w-80">
 				<TextField label="First Name" {...register("firstName")} />
 				<TextField label="Last Name" {...register("lastName")} />

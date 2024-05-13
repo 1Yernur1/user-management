@@ -32,3 +32,10 @@ export const createUser = async (data: UserModel) => {
 	});
 	return response.json();
 };
+
+export const deleteUser = async (selectedUserId: number) => {
+	const response = await fetch(`http://localhost:3000/users/${selectedUserId}`, {
+		method: "DELETE",
+	});
+	return response.json();
+};
