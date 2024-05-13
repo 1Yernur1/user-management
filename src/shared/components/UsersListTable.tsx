@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { useLocation, useNavigate, useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { deleteUser } from "../../service";
 import { DataGrid, GridColDef, GridPaginationModel } from "@mui/x-data-grid";
 import { IconButton, Menu, MenuItem } from "@mui/material";
